@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFB1A86A19C049880038905C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB1A86919C049880038905C /* Foundation.framework */; };
+		FFB1A86C19C049880038905C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB1A86B19C049880038905C /* CoreGraphics.framework */; };
+		FFB1A86E19C049880038905C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB1A86D19C049880038905C /* UIKit.framework */; };
+		FFB1A87419C049880038905C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFB1A87219C049880038905C /* InfoPlist.strings */; };
+		FFB1A87619C049880038905C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB1A87519C049880038905C /* main.m */; };
+		FFB1A87A19C049880038905C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB1A87919C049880038905C /* AppDelegate.m */; };
+		FFB1A87C19C049880038905C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB1A87B19C049880038905C /* Images.xcassets */; };
+		FFB1A88319C049880038905C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB1A88219C049880038905C /* XCTest.framework */; };
+		FFB1A88419C049880038905C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB1A86919C049880038905C /* Foundation.framework */; };
+		FFB1A88519C049880038905C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB1A86D19C049880038905C /* UIKit.framework */; };
+		FFB1A88D19C049880038905C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFB1A88B19C049880038905C /* InfoPlist.strings */; };
+		FFB1A88F19C049880038905C /* SNNavigationControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB1A88E19C049880038905C /* SNNavigationControllerDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFB1A88619C049880038905C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFB1A85E19C049880038905C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFB1A86519C049880038905C;
+			remoteInfo = SNNavigationControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFB1A86619C049880038905C /* SNNavigationControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNNavigationControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB1A86919C049880038905C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFB1A86B19C049880038905C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFB1A86D19C049880038905C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFB1A87119C049880038905C /* SNNavigationControllerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SNNavigationControllerDemo-Info.plist"; sourceTree = "<group>"; };
+		FFB1A87319C049880038905C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFB1A87519C049880038905C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFB1A87719C049880038905C /* SNNavigationControllerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SNNavigationControllerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		FFB1A87819C049880038905C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFB1A87919C049880038905C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFB1A87B19C049880038905C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FFB1A88119C049880038905C /* SNNavigationControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNNavigationControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB1A88219C049880038905C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FFB1A88A19C049880038905C /* SNNavigationControllerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SNNavigationControllerDemoTests-Info.plist"; sourceTree = "<group>"; };
+		FFB1A88C19C049880038905C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFB1A88E19C049880038905C /* SNNavigationControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNNavigationControllerDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFB1A86319C049880038905C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB1A86C19C049880038905C /* CoreGraphics.framework in Frameworks */,
+				FFB1A86E19C049880038905C /* UIKit.framework in Frameworks */,
+				FFB1A86A19C049880038905C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB1A87E19C049880038905C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB1A88319C049880038905C /* XCTest.framework in Frameworks */,
+				FFB1A88519C049880038905C /* UIKit.framework in Frameworks */,
+				FFB1A88419C049880038905C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFB1A85D19C049880038905C = {
+			isa = PBXGroup;
+			children = (
+				FFB1A86F19C049880038905C /* SNNavigationControllerDemo */,
+				FFB1A88819C049880038905C /* SNNavigationControllerDemoTests */,
+				FFB1A86819C049880038905C /* Frameworks */,
+				FFB1A86719C049880038905C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFB1A86719C049880038905C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFB1A86619C049880038905C /* SNNavigationControllerDemo.app */,
+				FFB1A88119C049880038905C /* SNNavigationControllerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFB1A86819C049880038905C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFB1A86919C049880038905C /* Foundation.framework */,
+				FFB1A86B19C049880038905C /* CoreGraphics.framework */,
+				FFB1A86D19C049880038905C /* UIKit.framework */,
+				FFB1A88219C049880038905C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFB1A86F19C049880038905C /* SNNavigationControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FFB1A87819C049880038905C /* AppDelegate.h */,
+				FFB1A87919C049880038905C /* AppDelegate.m */,
+				FFB1A87B19C049880038905C /* Images.xcassets */,
+				FFB1A87019C049880038905C /* Supporting Files */,
+			);
+			path = SNNavigationControllerDemo;
+			sourceTree = "<group>";
+		};
+		FFB1A87019C049880038905C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFB1A87119C049880038905C /* SNNavigationControllerDemo-Info.plist */,
+				FFB1A87219C049880038905C /* InfoPlist.strings */,
+				FFB1A87519C049880038905C /* main.m */,
+				FFB1A87719C049880038905C /* SNNavigationControllerDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFB1A88819C049880038905C /* SNNavigationControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB1A88E19C049880038905C /* SNNavigationControllerDemoTests.m */,
+				FFB1A88919C049880038905C /* Supporting Files */,
+			);
+			path = SNNavigationControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		FFB1A88919C049880038905C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFB1A88A19C049880038905C /* SNNavigationControllerDemoTests-Info.plist */,
+				FFB1A88B19C049880038905C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFB1A86519C049880038905C /* SNNavigationControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB1A89219C049880038905C /* Build configuration list for PBXNativeTarget "SNNavigationControllerDemo" */;
+			buildPhases = (
+				FFB1A86219C049880038905C /* Sources */,
+				FFB1A86319C049880038905C /* Frameworks */,
+				FFB1A86419C049880038905C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNNavigationControllerDemo;
+			productName = SNNavigationControllerDemo;
+			productReference = FFB1A86619C049880038905C /* SNNavigationControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFB1A88019C049880038905C /* SNNavigationControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB1A89519C049880038905C /* Build configuration list for PBXNativeTarget "SNNavigationControllerDemoTests" */;
+			buildPhases = (
+				FFB1A87D19C049880038905C /* Sources */,
+				FFB1A87E19C049880038905C /* Frameworks */,
+				FFB1A87F19C049880038905C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB1A88719C049880038905C /* PBXTargetDependency */,
+			);
+			name = SNNavigationControllerDemoTests;
+			productName = SNNavigationControllerDemoTests;
+			productReference = FFB1A88119C049880038905C /* SNNavigationControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFB1A85E19C049880038905C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = SOOONER;
+				TargetAttributes = {
+					FFB1A88019C049880038905C = {
+						TestTargetID = FFB1A86519C049880038905C;
+					};
+				};
+			};
+			buildConfigurationList = FFB1A86119C049880038905C /* Build configuration list for PBXProject "SNNavigationControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FFB1A85D19C049880038905C;
+			productRefGroup = FFB1A86719C049880038905C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFB1A86519C049880038905C /* SNNavigationControllerDemo */,
+				FFB1A88019C049880038905C /* SNNavigationControllerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFB1A86419C049880038905C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB1A87419C049880038905C /* InfoPlist.strings in Resources */,
+				FFB1A87C19C049880038905C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB1A87F19C049880038905C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB1A88D19C049880038905C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFB1A86219C049880038905C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB1A87A19C049880038905C /* AppDelegate.m in Sources */,
+				FFB1A87619C049880038905C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB1A87D19C049880038905C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB1A88F19C049880038905C /* SNNavigationControllerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFB1A88719C049880038905C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFB1A86519C049880038905C /* SNNavigationControllerDemo */;
+			targetProxy = FFB1A88619C049880038905C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFB1A87219C049880038905C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB1A87319C049880038905C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FFB1A88B19C049880038905C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB1A88C19C049880038905C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFB1A89019C049880038905C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFB1A89119C049880038905C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFB1A89319C049880038905C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNNavigationControllerDemo/SNNavigationControllerDemo-Prefix.pch";
+				INFOPLIST_FILE = "SNNavigationControllerDemo/SNNavigationControllerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFB1A89419C049880038905C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNNavigationControllerDemo/SNNavigationControllerDemo-Prefix.pch";
+				INFOPLIST_FILE = "SNNavigationControllerDemo/SNNavigationControllerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FFB1A89619C049880038905C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SNNavigationControllerDemo.app/SNNavigationControllerDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNNavigationControllerDemo/SNNavigationControllerDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SNNavigationControllerDemoTests/SNNavigationControllerDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FFB1A89719C049880038905C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SNNavigationControllerDemo.app/SNNavigationControllerDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNNavigationControllerDemo/SNNavigationControllerDemo-Prefix.pch";
+				INFOPLIST_FILE = "SNNavigationControllerDemoTests/SNNavigationControllerDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFB1A86119C049880038905C /* Build configuration list for PBXProject "SNNavigationControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB1A89019C049880038905C /* Debug */,
+				FFB1A89119C049880038905C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB1A89219C049880038905C /* Build configuration list for PBXNativeTarget "SNNavigationControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB1A89319C049880038905C /* Debug */,
+				FFB1A89419C049880038905C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFB1A89519C049880038905C /* Build configuration list for PBXNativeTarget "SNNavigationControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB1A89619C049880038905C /* Debug */,
+				FFB1A89719C049880038905C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFB1A85E19C049880038905C /* Project object */;
+}
