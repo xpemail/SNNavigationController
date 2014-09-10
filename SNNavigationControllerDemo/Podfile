@@ -1,0 +1,7 @@
+platform :ios,'7.0'
+
+xcodeproj 'SNNavigationControllerDemo.xcodeproj' 
+
+pod 'SNNavigationController', :git => 'https://github.com/xpemail/SNNavigationController.git'
+
+
