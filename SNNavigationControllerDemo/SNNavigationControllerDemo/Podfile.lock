@@ -1,0 +1,14 @@
+PODS:
+  - SNNavigationController (1.0.0)
+
+DEPENDENCIES:
+  - SNNavigationController (from `https://github.com/xpemail/SNNavigationController.git`)
+
+EXTERNAL SOURCES:
+  SNNavigationController:
+    :git: https://github.com/xpemail/SNNavigationController.git
+
+SPEC CHECKSUMS:
+  SNNavigationController: b15bc2fbf1084c87d6f55cf4fa700c6cc52601e2
+
+COCOAPODS: 0.33.1
