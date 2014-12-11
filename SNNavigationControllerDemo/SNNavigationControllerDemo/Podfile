@@ -4,4 +4,31 @@ xcodeproj 'SNNavigationControllerDemo.xcodeproj'
 
 pod 'SNNavigationController', :git => 'https://github.com/xpemail/SNNavigationController.git'
 
+pod 'AFNetworkingExt', :git => 'https://github.com/xpemail/AFNetworkingExt.git'
+
+pod 'LKDBHelperTransaction', :git => 'https://github.com/xpemail/LKDBHelperTransaction.git'
+
+pod 'ffmpeg', :git => 'https://github.com/xpemail/ffmpeg.git'
+
+pod 'ijkplayer', :git => 'https://github.com/xpemail/ijkplayer.git',:submodules => true
+
+
+post_install do |installer|
+    
+    installer.project.build_configurations.each do |config|
+        config.build_settings['SDKROOT'] = "iphoneos"
+        config.build_settings['ARCHS'] = "armv7 armv7s"
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = "6.0"
+    end
+    
+    installer.project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['ARCHS'] = "armv7 armv7s"
+            config.build_settings['GCC_WARN_UNDECLARED_SELECTOR'] = "NO"
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = "6.0"
+        end
+    end
+end
+
+
 

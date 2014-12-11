@@ -20,21 +20,21 @@
         [self pushViewController:[[aClass alloc] init] animated:NO];
     return nil;
 }
-
--(UIViewController *)currentViewController{
-    UIViewController  *controller= [self.viewControllers objectAtIndex:self.viewControllers.count-1];
-    return controller;
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
-    return [[self currentViewController] shouldAutorotateToInterfaceOrientation:toInterfaceOrientation];
-}
-- (BOOL)shouldAutorotate{
-    return [[self currentViewController] shouldAutorotate];
-}
-- (NSUInteger)supportedInterfaceOrientations{
-    return [[self currentViewController] supportedInterfaceOrientations];
-}
+//冲突
+//-(UIViewController *)currentViewController{
+//    UIViewController  *controller= [self.viewControllers objectAtIndex:self.viewControllers.count-1];
+//    return controller;
+//}
+//
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
+//    return [[self currentViewController] shouldAutorotateToInterfaceOrientation:toInterfaceOrientation];
+//}
+//- (BOOL)shouldAutorotate{
+//    return [[self currentViewController] shouldAutorotate];
+//}
+//- (NSUInteger)supportedInterfaceOrientations{
+//    return [[self currentViewController] supportedInterfaceOrientations];
+//}
 
 @end
 
