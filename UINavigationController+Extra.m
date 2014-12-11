@@ -20,7 +20,7 @@
         [self pushViewController:[[aClass alloc] init] animated:NO];
     return nil;
 }
-//冲突
+//冲突 by xd.5
 //-(UIViewController *)currentViewController{
 //    UIViewController  *controller= [self.viewControllers objectAtIndex:self.viewControllers.count-1];
 //    return controller;
