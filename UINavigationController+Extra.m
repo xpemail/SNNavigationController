@@ -20,7 +20,7 @@
         [self pushViewController:[[aClass alloc] init] animated:NO];
     return nil;
 }
-//冲突 by xd.5
+
 //-(UIViewController *)currentViewController{
 //    UIViewController  *controller= [self.viewControllers objectAtIndex:self.viewControllers.count-1];
 //    return controller;
@@ -173,6 +173,50 @@ static const char *indicatorHighlightedImageKey      ="__indicatorHighlightedIma
     
     [self setLeftBarButtonItem:barButtonItem animated:YES];
     
+}
+//by xd.5
+-(void)setLeftBarButtons:(NSArray*)array target:(id)target action:(SEL)action{
+    
+    NSMutableArray *mutarray = [[NSMutableArray alloc] init];
+    for (int i = 0; i<array.count; i++) {
+        
+        UIImage *image = [array objectAtIndex:i];
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        button.backgroundColor =[UIColor clearColor];
+        
+        button.frame = CGRectMake(0.0, 0.0, 40, 27.0);
+        
+        button.tag = (i+1)*2000;
+        
+        CGFloat leftInset = 0.0f;
+        
+        if([UIDevice currentDevice].systemVersion.floatValue>=7.0f){
+            leftInset = 40 - image.size.width;;
+        }else{
+            leftInset = 40 - image.size.width;
+        }
+        if (leftInset<0) {
+            leftInset=0;
+        }
+        
+        [button setImageEdgeInsets:UIEdgeInsetsMake(2.0,
+                                                    0.0,
+                                                    0.0,
+                                                    +leftInset)];
+        
+        [button setImage:image forState:UIControlStateNormal];
+        
+        [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+        
+        UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+        
+        [mutarray addObject:barButtonItem];
+    }
+    
+    self.leftBarButtonItem = nil;
+    [self setLeftBarButtonItems:mutarray animated:YES];
 }
 
 - (void)setRightBarButtonTitle:(NSString *)title target:(id)target action:(SEL)action{

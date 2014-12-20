@@ -35,7 +35,7 @@
 - (void)setRightBarButton:(UIButton *)button;
 
 
-
+-(void)setLeftBarButtons:(NSArray*)array target:(id)target action:(SEL)action;  //by xd.5
 -(void)setRightBarButtons:(NSArray*)array target:(id)target action:(SEL)action;
 
 -(void)setMidTitleView:(UIView*)image;
