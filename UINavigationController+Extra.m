@@ -188,7 +188,7 @@ static const char *indicatorHighlightedImageKey      ="__indicatorHighlightedIma
         
         button.frame = CGRectMake(0.0, 0.0, 40, 27.0);
         
-        button.tag = (i+1)*2000;
+        button.tag = (i+1)*1000;
         
         CGFloat leftInset = 0.0f;
         
