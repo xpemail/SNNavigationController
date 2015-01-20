@@ -329,6 +329,54 @@ static const char *indicatorHighlightedImageKey      ="__indicatorHighlightedIma
     [self setRightBarButtonItems:mutarray animated:YES];
 
 }
+//长按  
+-(void)setRightBarButtons:(NSArray *)array target:(id)target action:(SEL)action withLongPress:(SEL)longPressAction
+{
+    NSMutableArray *mutarray = [[NSMutableArray alloc] init];
+    for (int i = 0; i<array.count; i++) {
+        
+        UIImage *image = [array objectAtIndex:i];
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        if (i==1) {
+            UILongPressGestureRecognizer * longPress=[[UILongPressGestureRecognizer alloc]initWithTarget:target action:longPressAction];
+            [button addGestureRecognizer:longPress];
+        }
+        button.backgroundColor =[UIColor clearColor];
+        
+        button.frame = CGRectMake(0.0, 0.0, 40, 27.0);
+        
+        button.tag = (i+1)*1000;
+        
+        CGFloat rightInset = 0.0f;
+        
+        if([UIDevice currentDevice].systemVersion.floatValue>=7.0f){
+            rightInset = 40 - image.size.width;;
+        }else{
+            rightInset = 40 - image.size.width;
+        }
+        if (rightInset<0) {
+            rightInset=0;
+        }
+        
+        [button setImageEdgeInsets:UIEdgeInsetsMake(2.0,
+                                                    0.0,
+                                                    0.0,
+                                                    -rightInset)];
+        
+        [button setImage:image forState:UIControlStateNormal];
+        
+        [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+        
+        UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+        
+        [mutarray addObject:barButtonItem];
+    }
+    
+    
+    self.rightBarButtonItem = nil;
+    [self setRightBarButtonItems:mutarray animated:YES];
+}
 
 -(void)setMidTitleView:(UIView*)image{
     

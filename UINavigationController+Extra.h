@@ -38,6 +38,8 @@
 -(void)setLeftBarButtons:(NSArray*)array target:(id)target action:(SEL)action;  //by xd.5
 -(void)setRightBarButtons:(NSArray*)array target:(id)target action:(SEL)action;
 
+-(void)setRightBarButtons:(NSArray*)array target:(id)target action:(SEL)action withLongPress:(SEL)longPressAction;  //长按
+
 -(void)setMidTitleView:(UIView*)image;
 
 @end
